@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <h1>Lista de Gerentes</h1>
+  </div>
+  <div class="row">
+    <div class="section col s4">
+      <ul class="listaGestores">
+        <li *ngFor="let gestor of listaGestores" (click)="onSelect(gestor)" [class.selected]="gestor===gestorClicado">
+          <span class="badge">{{gestor.nome}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngIf="gestorClicado" class="details">
+      <h2>Detalhes</h2>
+
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Cargo</th>
+          <th>Email</th>
+          <th>Telefone</th>
+        </tr>
+        <tr>
+          <td>{{gestorClicado.nome}}</td>
+          <td>{{gestorClicado.cargo}}</td>
+          <td>{{gestorClicado.email}}</td>
+          <td>{{gestorClicado.telefone}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

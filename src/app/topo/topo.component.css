@@ -1,0 +1,12 @@
+.topo{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    justify-content: center;
+    color:#EA0000;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}.nome{
+    margin:0.4em;
+}.sigla{
+    margin:0.4em;
+}

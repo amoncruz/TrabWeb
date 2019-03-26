@@ -1,0 +1,15 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    
+}
+.title{
+    position: absolute;
+    padding:0.2rem;
+}
+.texto{
+   color:#EA0000;
+}
